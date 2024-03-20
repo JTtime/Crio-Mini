@@ -22,7 +22,7 @@ const DateRangePicker = () => {
   };
   return (
     <>
-      <label for="meeting-time">Choose a time for your appointment:</label>
+      <label for="meeting-time">CountDown Timer</label>
 
       <input
         type="datetime-local"
