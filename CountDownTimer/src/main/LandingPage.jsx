@@ -1,11 +1,18 @@
 import React from 'react';
 import DateRangePicker from '../sharedComponents/DateRange';
+import TimerButton from '../sharedComponents/TimerButton';
 
 const LandingPage = () => {
 
 
     return (
-        <>  <DateRangePicker/></>
+        <>  
+        <p>Countdown Timer</p>
+        
+        
+        <DateRangePicker/>
+        <TimerButton/>
+        </>
     )
 }
 
