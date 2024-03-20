@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
 
-const TimerButton = () => {
-  const [timer, setTimer] = useState(false);
+const TimerButton = ({ timer, handleTimerButtonClick}) => {
+  // const [timer, setTimer] = useState(false);
+
+  
 
   return (
     <>
-      <button onClick={()=>{setTimer(!timer)}}>{!timer ? "Start timer" : "Cancel timer"}</button>
+      <button onClick={handleTimerButtonClick}>
+        {timer == "timerOff" || timer == "timerOver" ? "Start timer" : "Cancel timer"}
+      </button>
     </>
   );
 };
